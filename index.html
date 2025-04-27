@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourPerfectSummer.com - Rencanakan Liburan Musim Panas Impianmu!</title>
+    <meta name="description" content="Temukan destinasi liburan musim panas terbaik, tips perjalanan, dan inspirasi untuk Your Perfect Summer. Rencanakan petualangan tak terlupakanmu sekarang!">
+    <meta name="keywords" content="liburan musim panas, destinasi wisata, tips perjalanan, pantai, petualangan, your perfect summer, rencana liburan">
+    <meta name="author" content="YourPerfectSummer.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome (opsional, untuk ikon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts (opsional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Inline CSS -->
+    <style>
+        /* Reset CSS (opsional, tapi disarankan) */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 a {
+            color: #e44d26; /* Warna oranye cerah */
+            text-decoration: none;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url('images/hero-image.jpg') no-repeat center center/cover; /* Ganti dengan gambar Anda */
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        #hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        /* Featured Destinations */
+        #featured-destinations {
+            padding: 50px 0;
+        }
+
+        #featured-destinations h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .destination {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .destination img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destination h3 {
+            padding: 15px;
+            font-size: 1.3em;
+        }
+
+        .destination p {
+            padding: 0 15px 15px;
+        }
+
+        /* Tips & Tricks */
+        #tips {
+            background-color: #fff;
+            padding: 50px 0;
+        }
+
+        #tips h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #tips ul {
+            list-style: none;
+            padding: 0 20px;
+        }
+
+        #tips ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        #tips ul li::before {
+            content: "\f00c"; /* Ikon checklist Font Awesome */
+            font-family: FontAwesome;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #e44d26;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Tombol (Button) */
+        .btn {
+            display: inline-block;
+            background-color: #e44d26;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #d14220;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                margin-bottom: 10px;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1><a href="/">YourPerfectSummer.com</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Destinasi</a></li>
+                    <li><a href="#">Tips</a></li>
+                    <li><a href="#">Inspirasi</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Rencanakan Liburan Musim Panas Impianmu!</h2>
+            <p>Temukan destinasi terbaik dan tips perjalanan untuk petualangan tak terlupakan.</p>
+            <a href="#" class="btn">Jelajahi Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="featured-destinations">
+        <div class="container">
+            <h2>Destinasi Unggulan</h2>
+            <div class="destinations-grid">
+                <div class="destination">
+                    <img src="images/bali.jpg" alt="Bali">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Pulau Dewata yang mempesona dengan pantai indah dan budaya yang kaya.</p>
+                    <a href="#" class="btn">Lihat Detail</a>
+                </div>
+                <div class="destination">
+                    <img src="images/santorini.jpg" alt="Santorini">
+                    <h3>Santorini, Yunani</h3>
+                    <p>Desa-desa putih yang ikonik dan pemandangan matahari terbenam yang spektakuler.</p>
+                    <a href="#" class="btn">Lihat Detail</a>
+                </div>
+                <div class="destination">
+                    <img src="images/maldives.jpg" alt="Maldives">
+                    <h3>Maldives</h3>
+                    <p>Surga tropis dengan laguna biru jernih dan resort mewah.</p>
+                    <a href="#" class="btn">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips & Tricks -->
+    <section id="tips">
+        <div class="container">
+            <h2>Tips Liburan Musim Panas</h2>
+            <ul>
+                <li>Packing ringan untuk kenyamanan perjalanan.</li>
+                <li>Lindungi kulit dari sinar matahari dengan sunscreen.</li>
+                <li>Cicipi kuliner lokal untuk pengalaman autentik.</li>
+                <li>Rencanakan aktivitas Anda sebelumnya untuk memaksimalkan waktu.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 YourPerfectSummer.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Inline JavaScript -->
+    <script>
+        // Tambahkan JavaScript Anda di sini (misalnya, untuk animasi sederhana atau interaksi pengguna)
+        console.log("YourPerfectSummer.com - JavaScript is running!");
+    </script>
+</body>
+</html>
